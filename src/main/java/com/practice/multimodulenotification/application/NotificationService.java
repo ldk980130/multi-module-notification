@@ -1,5 +1,6 @@
 package com.practice.multimodulenotification.application;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -32,5 +33,17 @@ public class NotificationService {
             .stream()
             .map(NotificationResponse::new)
             .collect(Collectors.toList());
+    }
+
+    public List<Notification> findAllInCompleted(LocalDateTime time) {
+        return notificationRepository.findByPushStatusAndPushTimeIsBefore(PushStatus.IN_COMPLETED, time);
+    }
+
+    @Transactional
+    public void completeAll(List<Notification> notifications) {
+        List<Long> ids = notifications.stream()
+            .map(Notification::getId)
+            .collect(Collectors.toList());
+        notificationRepository.completeAll(ids);
     }
 }
