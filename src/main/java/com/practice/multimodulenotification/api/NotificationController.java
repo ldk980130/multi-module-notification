@@ -1,4 +1,4 @@
-package com.practice.multimodulenotification.presentation;
+package com.practice.multimodulenotification.api;
 
 import java.net.URI;
 import java.util.List;
@@ -10,9 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.practice.multimodulenotification.dto.NotificationRequest;
-import com.practice.multimodulenotification.dto.NotificationResponse;
-import com.practice.multimodulenotification.application.NotificationService;
+import com.practice.multimodulenotification.api.dto.NotificationRequest;
+import com.practice.multimodulenotification.api.dto.NotificationResponse;
 
 import lombok.RequiredArgsConstructor;
 

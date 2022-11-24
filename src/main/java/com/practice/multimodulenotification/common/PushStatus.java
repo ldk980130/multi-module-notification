@@ -1,4 +1,4 @@
-package com.practice.multimodulenotification.domain;
+package com.practice.multimodulenotification.common;
 
 public enum PushStatus {
 

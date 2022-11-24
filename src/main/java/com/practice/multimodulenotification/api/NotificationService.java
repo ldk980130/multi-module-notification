@@ -1,4 +1,4 @@
-package com.practice.multimodulenotification.application;
+package com.practice.multimodulenotification.api;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -7,11 +7,11 @@ import java.util.stream.Collectors;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.practice.multimodulenotification.dto.NotificationRequest;
-import com.practice.multimodulenotification.dto.NotificationResponse;
-import com.practice.multimodulenotification.domain.Notification;
-import com.practice.multimodulenotification.domain.NotificationRepository;
-import com.practice.multimodulenotification.domain.PushStatus;
+import com.practice.multimodulenotification.api.dto.NotificationRequest;
+import com.practice.multimodulenotification.api.dto.NotificationResponse;
+import com.practice.multimodulenotification.common.Notification;
+import com.practice.multimodulenotification.common.NotificationRepository;
+import com.practice.multimodulenotification.common.PushStatus;
 
 import lombok.RequiredArgsConstructor;
 

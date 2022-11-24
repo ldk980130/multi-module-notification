@@ -1,4 +1,4 @@
-package com.practice.multimodulenotification.domain;
+package com.practice.multimodulenotification.common;
 
 import java.time.LocalDateTime;
 import java.util.List;

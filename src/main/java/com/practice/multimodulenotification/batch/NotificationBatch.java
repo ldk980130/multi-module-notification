@@ -6,8 +6,8 @@ import java.util.List;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.practice.multimodulenotification.application.NotificationService;
-import com.practice.multimodulenotification.domain.Notification;
+import com.practice.multimodulenotification.api.NotificationService;
+import com.practice.multimodulenotification.common.Notification;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

@@ -1,8 +1,8 @@
-package com.practice.multimodulenotification.dto;
+package com.practice.multimodulenotification.api.dto;
 
 import java.time.LocalDateTime;
 
-import com.practice.multimodulenotification.domain.Notification;
+import com.practice.multimodulenotification.common.Notification;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
