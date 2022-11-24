@@ -6,7 +6,6 @@ import java.util.List;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.practice.multimodulenotification.api.NotificationService;
 import com.practice.multimodulenotification.common.Notification;
 
 import lombok.RequiredArgsConstructor;
@@ -17,7 +16,7 @@ import lombok.extern.slf4j.Slf4j;
 @Component
 public class NotificationBatch {
 
-    private final NotificationService notificationService;
+    private final NotificationBatchService notificationService;
 
     @Transactional
     public void sendNotifications() {

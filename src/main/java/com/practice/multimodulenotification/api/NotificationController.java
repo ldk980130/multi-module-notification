@@ -20,7 +20,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class NotificationController {
 
-    private final NotificationService notificationService;
+    private final NotificationApiService notificationService;
 
     @PostMapping
     public ResponseEntity<Void> create(@RequestBody NotificationRequest request) {
